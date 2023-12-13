@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+function media2() {
+    var x = parseInt(prompt('quantidade de numeros'));
+
+    if (x <= 0) {
+        alert('o numero precisa ser maior que zero');
+    } else {
+        var y = 0;
+        for (var i = 1; i <= x; i++) {
+            var z = parseInt(prompt('digite um numero'));
+            y += z;
+        }
+        var m = y / x;
+        resultado(y, m);
+    }
+}
+
+function resultado(soma, media) {
+    alert('soma: ' + soma);
+    alert('media: ' + media);
+}
+
+
+media2();
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let x = parseFloat(prompt("comprimento do primeiro lado: "));
+let y = parseFloat(prompt("comprimento do segundo lado: "));
+let z = parseFloat(prompt("comprimento do terceiro lado: "));
+
+function ax () {
+if (x + y > z) {
+if (x + z > y) {
+if (y + z > x) {
+    
+if (x == y && y == z) {
+    alert("Triângulo Equilátero");
+} else if (x == y || x == z || y == z) {
+    alert("Triângulo Isósceles");
+} else {
+    alert("Triângulo Escaleno");}}}}
+}
+
+ax ()
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function soman() {
+        let x = parseInt(prompt("digite um numero "));
+        let y = parseInt(prompt("digite um numero maior que o primeiro "));
+    
+        if (x >= y) {
+            alert("O segundo numero precisa ser maior que o primeiro");
+            return;
+        }
+    
+        let s = 0;
+        let n = x;
+    
+        while (n <= y) {
+            if (n % 2 !== 0) {
+                s += n;
+            }
+            n = n + 1;
+        }
+    
+        alert(`Soma:  ${s}`);
+    }
+    
+    
+    soman();
+</script>
+</body>
+</html>
